@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'spooky';
+    src: url(../assets/font/Melted-Monster.ttf) format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family:"spooky", sans-serif;
+    color: black;
+    cursor: url(../assets/cursor/cursor.cur), auto;
+}
+
+header {
+    background-color: black;
+    color: orange;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>h2{
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+h1 {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffa600;
+    color: white;
+}
+
+#loader-section{
+
+    background-color: #ffa600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oculto{
+    display: none;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    color: orange;
+    font-size: 25px;
+}
+
+nav a:hover{
+    background-color: orange;
+    color: black;
+}
+
+main {
+    background-image: url(../assets/img/image-02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid #ccc;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 10px;
+}
+
+form>label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input,
+form select,
+form button,
+form #tipo {
+    margin-bottom: 10px;
+}
+
+form .radio-group {
+    margin-bottom: 10px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+form .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form button {
+    height: 40px;
+    background-color: rgb(66, 66, 162);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-variant: small-caps;
+    font-family: "spooky", sans-serif;
+    font-size: 20px;
+}
+
+form button:hover {
+    background-color: white;
+    color: blue;
+}
+
+form button img{
+    padding-right: 8px;
+}
+
+table {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    color: white;
+}
+
+table, th, td {
+    border: 1px solid orange;
+}
+
+th{
+    background-color: orange;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant:small-caps;
+}
+
+td{
+    background-color: black;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.monstruo-card {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 5px;
+    background-color: purple;
+    border-color: orange;
+    width: 500px;
+    text-align: center;
+}
+
+.monstruo-card>h2{
+    color: greenyellow;
+    size: 15px;
+}

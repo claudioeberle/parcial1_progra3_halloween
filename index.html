@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Monstruos de Halloween</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./assets/ico/pumpkin.png" alt="Logo">
+        <h2>Hotel Transylvania</h2>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="monstruos.html">MONSTRUOS</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACTO</a>
+        </nav>
+    </header>
+    <div>
+        <h1 id="crudHeading">CRUD MONSTRUOS</h1>
+    </div>
+    <section id="loader-section" >
+        <img id="loader1" src="./assets/loaders/loader.gif" alt="loader-fantasma" class="oculto">
+    </section>
+    <main>
+        <form onsubmit="agregarMonstruo(event)">
+            <h2>INFORMACION DEL MONSTRUO</h2>
+            <label for="nombre"><img src="./assets/ico/black-evil-cat.png" width="30" alt="icono-nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="alias"><img src="./assets/ico/castle.png" width="30" alt="icono-nombre">Alias:</label>
+            <input type="text" id="alias" name="alias" required><br>
+
+            <label><img src="./assets/ico/ghost.png" width="30" alt="icono-nombre">Defensa:</label>
+            <div class="radio-group">
+                <label for="pocion">Pocion</label>
+                <input type="radio" id="pocion" name="defensa" value="Pocion" required>
+                <label for="crucifijo">Crucifijo</label>
+                <input type="radio" id="crucifijo" name="defensa" value="Crucifijo" required>
+                <label for="estaca">Estaca</label>
+                <input type="radio" id="estaca" name="defensa" value="Estaca" required>
+                <label for="plata">Plata</label>
+                <input type="radio" id="plata" name="defensa" value="Plata" required>
+            </div>
+
+            <label for="miedo"><img src="./assets/ico/pumpkin.png" width="30" alt="icono-nombre">Miedo:</label>
+            <input type="range" id="miedo" name="miedo" min="0" max="10" value="0" required><br>
+            <span id="miedoValue">0</span><br>
+
+
+            <label for="tipo"><img src="./assets/ico/toad.png" width="30" alt="icono-nombre">Tipo:</label>
+            <select id="tipo" name="tipo" required>
+                <!-- lo cargo desde el js -->
+            </select><br>
+
+            <div class="button-container">
+                <button type="button" id="guardar-btn">Guardar</button>
+                <button type="button" id="cancelar-btn">Cancelar</button>
+                <button type="button" id="modificar-btn" style="display: none;">Modificar</button>
+                <button type="button" id="eliminar-btn" style="display: none;">Eliminar</button>
+            </div>
+        </form>
+
+        <table id="monsterTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Alias</th>
+                    <th>Defensa</th>
+                    <th>Miedo</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- lo cargo desde el js -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">MONSTRUOS</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTACTO</a>
+        </nav>
+        <p>LABORATORIO III - TODOS LOS DERECHOS RESERVADOS 2023</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
